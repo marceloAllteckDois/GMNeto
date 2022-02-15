@@ -27,8 +27,8 @@ def set_engine():
 def open_site(driver):
     driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[13]/div[2]/a[8]').click()
     wait_element(driver,By.XPATH,'//*[@id="username"]')
-    driver.find_element(By.XPATH,'//*[@id="username"]').send_keys('alltecksolutionsbrasil@gmail.com')
-    driver.find_element(By.XPATH,'//*[@id="password"]').send_keys('car123')
+    driver.find_element(By.XPATH,'//*[@id="username"]').send_keys('"seu email ou nickname"')
+    driver.find_element(By.XPATH,'//*[@id="password"]').send_keys('"sua senha"')
     driver.find_element(By.XPATH,'//*[@id="login"]').click()
     wait_element(driver,By.XPATH,'//*[@id="quick-link-computer"]')
     driver.find_element(By.XPATH,'//*[@id="quick-link-computer"]').click()
